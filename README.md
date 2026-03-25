@@ -1,4 +1,4 @@
-# IRIS Metal: Agentic AI powered by TinyFish
+# <img width="40" height="40" alt="PHOENIX_FAV" src="https://github.com/user-attachments/assets/a09aafef-5361-45d2-9742-e917fbb2e32a" /> IRIS Metal: Agentic AI powered by TinyFish
 
 A unified agentic intelligence platform that enables real-time lead generation, zero-friction web navigation, and dynamic multi-model AI responses through a single interface powered by TinyFish API.
 
