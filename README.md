@@ -4,6 +4,8 @@ A unified agentic intelligence platform that enables real-time lead generation, 
 
 <img width="1427" height="688" alt="IRIS" src="https://github.com/user-attachments/assets/758ba2d4-a2b8-44ac-a670-e906d379966a" />
 
+### [Visit: IRIS • METAL ](https://metal-ai-saas.vercel.app)
+
 ---
 
 ## Platform Overview
