@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 6% 7%;
+    --foreground: 240 5% 96%;
+
+    --card: 240 4% 10%;
+    --card-foreground: 240 5% 96%;
+
+    --popover: 240 4% 10%;
+    --popover-foreground: 240 5% 96%;
+
+    --primary: 240 5% 96%;
+    --primary-foreground: 240 6% 10%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 240 5% 96%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 4% 16%;
+    --accent-foreground: 240 5% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 240 5% 65%;
+
+    --radius: 0.75rem;
+
+    /* Chat-specific tokens */
+    --chat-surface: 240 4% 7%;
+    --chat-bubble-bot: 240 4% 12%;
+    --chat-bubble-user: 240 5% 92%;
+    --chat-bubble-user-fg: 240 6% 10%;
+    --chat-header: 240 4% 10%;
+    --chat-ring: 0 0% 100%;
+    --chat-online: 160 84% 39%;
+    --chat-glow: 160 84% 39%;
+    --chat-accent-subtle: 220 70% 55%;
+    --chat-brand: 160 84% 39%;
+
+    --sidebar-background: 240 6% 7%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 240 6% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 240 6% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 10%;
+
+    --primary: 240 6% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 5% 93%;
+    --secondary-foreground: 240 6% 10%;
+
+    --muted: 240 5% 93%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 240 5% 93%;
+    --accent-foreground: 240 6% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 240 6% 10%;
+
+    /* Chat-specific tokens — light */
+    --chat-surface: 0 0% 98%;
+    --chat-bubble-bot: 240 5% 95%;
+    --chat-bubble-user: 240 6% 15%;
+    --chat-bubble-user-fg: 0 0% 98%;
+    --chat-header: 0 0% 100%;
+    --chat-ring: 240 6% 10%;
+    --chat-online: 160 84% 39%;
+    --chat-glow: 160 84% 39%;
+    --chat-accent-subtle: 220 70% 55%;
+    --chat-brand: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Ambient background grain */
+@layer components {
+  .ambient-grid {
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(var(--chat-glow) / 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--chat-accent-subtle) / 0.03) 0%, transparent 50%);
+  }
+  .toggle-glow {
+    box-shadow: 
+      0 0 20px hsl(var(--chat-glow) / 0.15),
+      0 0 60px hsl(var(--chat-glow) / 0.05),
+      0 8px 32px rgba(0,0,0,0.4);
+  }
+  .toggle-glow-open {
+    box-shadow: 
+      0 0 15px hsl(var(--chat-accent-subtle) / 0.1),
+      0 8px 32px rgba(0,0,0,0.4);
+  }
+  .widget-shadow {
+    box-shadow:
+      0 25px 60px rgba(0,0,0,0.5),
+      0 0 0 1px hsl(var(--chat-ring) / 0.08),
+      inset 0 1px 0 hsl(var(--chat-ring) / 0.05);
+  }
+  .light .widget-shadow {
+    box-shadow:
+      0 25px 60px rgba(0,0,0,0.1),
+      0 0 0 1px hsl(var(--chat-ring) / 0.08),
+      inset 0 1px 0 hsl(var(--chat-ring) / 0.05);
+  }
+  .light .toggle-glow {
+    box-shadow: 
+      0 0 20px hsl(var(--chat-glow) / 0.1),
+      0 8px 32px rgba(0,0,0,0.1);
+  }
+}
