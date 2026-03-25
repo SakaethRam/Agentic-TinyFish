@@ -2,7 +2,7 @@
 
 A unified agentic intelligence platform that enables real-time lead generation, zero-friction web navigation, and dynamic multi-model AI responses through a single interface powered by TinyFish API.
 
-<img width="1515" height="688" alt="IRIS" src="https://github.com/user-attachments/assets/46f3998e-e6d6-477a-bbbe-e59becbfaa64" />
+<img width="1427" height="688" alt="IRIS" src="https://github.com/user-attachments/assets/758ba2d4-a2b8-44ac-a670-e906d379966a" />
 
 ---
 
