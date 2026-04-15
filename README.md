@@ -302,8 +302,8 @@ const BASE_API = "http://localhost:8000";
 
 ---
 
-## Contribution
-[@Abishek]([https://github.com/octocat](https://github.com/R-E-Y-O-X))
+## Contributions
+#### [@Abishek](https://github.com/R-E-Y-O-X) 
 
 ---
 
