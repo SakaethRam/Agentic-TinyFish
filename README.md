@@ -2,7 +2,7 @@
 
 A unified agentic intelligence platform that enables real-time lead generation, zero-friction web navigation, and dynamic multi-model AI responses through a single interface powered by TinyFish API.
 
-#### Here is the FloRider AI MVP Orientation video: [AGENTIC • TINYFISH](https://vimeo.com/1183496256?share=copy&fl=sv&fe=ci)
+#### Here is the IRIS Metal MVP Orientation video: [IRIS • METAL](https://vimeo.com/1183496256?share=copy&fl=sv&fe=ci)
 
 <img width="1427" height="688" alt="IRIS" src="https://github.com/user-attachments/assets/758ba2d4-a2b8-44ac-a670-e906d379966a" />
 
